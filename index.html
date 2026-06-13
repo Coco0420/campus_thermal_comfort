@@ -175,45 +175,129 @@
     <button onclick="selectSchool(null)" style="margin-left:20px;background:rgba(255,255,255,0.2);border:1px solid rgba(255,255,255,0.4);border-radius:6px;padding:4px 12px;font-size:12px;color:#fff;cursor:pointer;font-family:inherit;">← Change school</button>
   </div>
 
-  <div style="max-width:820px;margin:60px auto;padding:0 24px;">
-    <div style="background:#fff;border-radius:14px;border:1px solid #e0e0e0;padding:40px;box-shadow:0 2px 10px rgba(0,0,0,0.07);">
-      <h2 style="font-size:22px;font-weight:700;color:#1F3864;margin-bottom:8px;">Ready to participate?</h2>
-      <p style="font-size:14px;color:#666;margin-bottom:28px;line-height:1.6;">Choose one or both options below. Each is completely independent — you can do both if you'd like.</p>
+  <div style="max-width:820px;margin:0 auto;padding:52px 24px;">
 
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
-        <div style="background:#EBF3FB;border:1.5px solid #2E75B6;border-radius:12px;padding:28px;text-align:center;">
-          <div style="font-size:36px;margin-bottom:12px;">💻</div>
-          <div style="font-size:17px;font-weight:700;color:#1F3864;margin-bottom:6px;">Online Survey</div>
-          <div style="font-size:12px;color:#666;margin-bottom:6px;">10–15 minutes · Complete anytime</div>
-          <div style="font-size:12px;color:#666;margin-bottom:6px;">Aug 24 – Sep 7, 2026</div>
-          <div style="font-size:12px;color:#2E75B6;font-weight:600;margin-bottom:20px;">🎁 Raffle: 15 × $10 gift cards</div>
-          <a href="[TAMU SURVEY123 LINK]" target="_blank"
-             style="display:block;background:#1F3864;color:#fff;text-decoration:none;border-radius:8px;padding:13px;font-size:14px;font-weight:700;">
-            Go to Online Survey →
-          </a>
-        </div>
-        <div style="background:#FFF8EE;border:1.5px solid #C17D11;border-radius:12px;padding:28px;text-align:center;">
-          <div style="font-size:36px;margin-bottom:12px;">🌳</div>
-          <div style="font-size:17px;font-weight:700;color:#7B4D0C;margin-bottom:6px;">On-Site Session</div>
-          <div style="font-size:12px;color:#666;margin-bottom:6px;">30 minutes · Weekdays 12:30–1:00 pm</div>
-          <div style="font-size:12px;color:#666;margin-bottom:6px;">Sep 7 – Oct 9, 2026</div>
-          <div style="font-size:12px;color:#C17D11;font-weight:600;margin-bottom:20px;">💵 $10 gift card within 3–7 business days</div>
-          <a href="[TAMU GOOGLE FORMS LINK]" target="_blank"
-             style="display:block;background:#7B4D0C;color:#fff;text-decoration:none;border-radius:8px;padding:13px;font-size:14px;font-weight:700;">
-            Sign Up for On-Site Session →
-          </a>
-        </div>
+  <div class="cards">
+    <div class="card">
+      <div class="card-head blue">
+        <h2 class="blue">💻 Online Survey</h2>
+        <div class="duration">10–15 minutes · Complete anytime</div>
       </div>
-
-      <p style="font-size:12px;color:#888;text-align:center;margin-top:16px;">Clicking either button will open in a new tab. You may participate in one or both.</p>
-
-      <div style="background:#FFF8EE;border:1px solid #F5C97A;border-radius:10px;padding:16px 20px;margin-top:24px;">
-        <p style="font-size:12px;color:#5C3D08;line-height:1.7;margin:0;">
-          Questions? Contact Shu Sun at <a href="mailto:ssun352@wisc.edu" style="color:#7B4D0C;font-weight:600;">ssun352@wisc.edu</a> &nbsp;·&nbsp;
-          IRB Protocol No. [XXXXX] &nbsp;·&nbsp; Participation is voluntary
-        </p>
+      <div class="card-body">
+        <ul>
+          <li>Answer questions about your outdoor thermal comfort</li>
+          <li>Mark the hottest & coldest spots on an interactive campus map</li>
+          <li>Share how weather affects your campus behavior</li>
+          <li>Complete anytime during the collection period</li>
+        </ul>
+        <div style="background:#2E75B6;color:#fff;border-radius:8px;padding:10px 14px;font-size:12px;font-weight:600;margin-bottom:12px;">🎁 Raffle: 15 × $10 gift cards per campus</div>
       </div>
     </div>
+    <div class="card">
+      <div class="card-head amber">
+        <h2 class="amber">🌳 On-Site Session</h2>
+        <div class="duration">30 minutes · Weekdays 12:30–1:00 pm</div>
+      </div>
+      <div class="card-body">
+        <ul>
+          <li class="amber">Guided tour of 3 outdoor campus locations</li>
+          <li class="amber">Rate your thermal comfort at each spot</li>
+          <li class="amber">Researcher records weather conditions simultaneously</li>
+          <li class="amber">Max 7 participants per session</li>
+        </ul>
+        <div class="compensation comp-amber">💵 $10 gift card — sent to your email within 3–7 business days</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="elig-box">
+    <h3>Who can participate?</h3>
+    <ul>
+      <li>Currently enrolled student at Texas A&M University</li>
+      <li>Undergraduate or graduate student, ages 18–35</li>
+      <li>You may join the online survey only, the on-site session only, or both — each is independent</li>
+    </ul>
+  </div>
+
+  <div class="section-title">Data collection schedule</div>
+  <table class="sched">
+    <thead>
+      <tr><th>Season</th><th>💻 Online Survey</th><th>🌳 On-Site Session</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Summer 2026</strong></td>
+        <td><span class="tag tag-blue">Aug 24 – Sep 7, 2026</span></td>
+        <td><span class="tag tag-amber">Sep 7 – Oct 9, 2026</span></td>
+      </tr>
+      <tr>
+        <td><strong>Winter 2027</strong></td>
+        <td><span class="tag tag-blue">Jan 19 – Feb 12, 2027</span></td>
+        <td><span class="tag tag-amber">Jan 19 – Mar 31, 2027</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="section-title">How it works</div>
+  <div class="steps">
+    <div class="step">
+      <div class="num" style="background:#500000;">1</div>
+      <h3>Choose how to join</h3>
+      <p>Complete the online survey, sign up for an on-site session, or do both. Each is independent.</p>
+    </div>
+    <div class="step">
+      <div class="num" style="background:#500000;">2</div>
+      <h3>Get a confirmation</h3>
+      <p>You'll receive a confirmation email with your survey link or on-site session details within 24 hours.</p>
+    </div>
+    <div class="step">
+      <div class="num" style="background:#500000;">3</div>
+      <h3>Receive your reward</h3>
+      <p>Online raffle winners notified by email. On-site participants receive a $10 gift card within 3–7 business days.</p>
+    </div>
+  </div>
+
+  <div class="signup-box">
+    <h2>Ready to participate?</h2>
+    <p class="sub">Choose one or both options below. Each is completely independent — you can do both if you'd like.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+      <div style="background:#EBF3FB;border:1.5px solid #2E75B6;border-radius:12px;padding:24px;text-align:center;">
+        <div style="font-size:32px;margin-bottom:10px;">💻</div>
+        <div style="font-size:16px;font-weight:700;color:#1F3864;margin-bottom:6px;">Online Survey</div>
+        <div style="font-size:12px;color:#666;margin-bottom:6px;">10–15 minutes · Complete anytime</div>
+        <div style="font-size:12px;color:#666;margin-bottom:16px;">Aug 24 – Sep 7, 2026</div>
+        <div style="font-size:12px;color:#2E75B6;font-weight:600;margin-bottom:16px;">🎁 Raffle: 15 × $10 gift cards per campus</div>
+        <a href="https://arcg.is/1z8KzK2" target="_blank"
+           style="display:block;background:#500000;color:#fff;text-decoration:none;border-radius:8px;padding:12px;font-size:14px;font-weight:700;">
+          Go to Online Survey →
+        </a>
+      </div>
+      <div style="background:#FFF8EE;border:1.5px solid #C17D11;border-radius:12px;padding:24px;text-align:center;">
+        <div style="font-size:32px;margin-bottom:10px;">🌳</div>
+        <div style="font-size:16px;font-weight:700;color:#7B4D0C;margin-bottom:6px;">On-Site Session</div>
+        <div style="font-size:12px;color:#666;margin-bottom:6px;">30 minutes · Weekdays 12:30–1:00 pm</div>
+        <div style="font-size:12px;color:#666;margin-bottom:16px;">Sep 7 – Oct 9, 2026</div>
+        <div style="background:#C17D11;color:#fff;border-radius:8px;padding:10px;font-size:12px;font-weight:600;margin-bottom:16px;">💵 $10 gift card sent within 3–7 business days</div>
+        <a href="https://forms.gle/YteacD9ZKx1a2qkv6" target="_blank"
+           style="display:block;background:#500000;color:#fff;text-decoration:none;border-radius:8px;padding:12px;font-size:14px;font-weight:700;">
+          Sign Up for On-Site Session →
+        </a>
+      </div>
+    </div>
+    <p style="font-size:12px;color:#888;text-align:center;margin-top:16px;">Clicking either button will open in a new tab. You may participate in one or both.</p>
+  </div>
+
+  <div class="info-box">
+    <h3>📋 Privacy & compensation</h3>
+    <ul>
+      <li>Online survey responses are anonymous. Your name is not collected in the survey.</li>
+      <li>Email addresses for the raffle are stored separately from responses and deleted after the drawing.</li>
+      <li>On-site participants: your name is collected for compensation records only and will not appear in any publication.</li>
+      <li>Participation is completely voluntary. You may stop at any time without penalty.</li>
+      <li>This study is approved by the UW–Madison IRB (Protocol No. [XXXXX]).</li>
+    </ul>
+  </div>
+
   </div>
 </div>
 
@@ -240,14 +324,7 @@
           <li>Complete anytime during the collection period</li>
         </ul>
         <div class="compensation comp-blue" style="display:none;"></div>
-        <div style="font-size:12px;color:#2E75B6;font-weight:600;margin-bottom:4px;">🎁 Raffle: 15 × $10 gift cards per campus</div>
-        <div style="padding:12px 0 0;">
-          <a href="https://arcg.is/1z8KzK2" target="_blank"
-             style="display:block;text-align:center;background:#1F3864;color:#fff;text-decoration:none;border-radius:8px;padding:11px 16px;font-size:13px;font-weight:700;transition:background 0.15s;"
-             onmouseover="this.style.background='#162A4E'" onmouseout="this.style.background='#1F3864'">
-            Go to Online Survey →
-          </a>
-        </div>
+        <div style="background:#2E75B6;color:#fff;border-radius:8px;padding:10px 14px;font-size:12px;font-weight:600;margin-bottom:12px;">🎁 Raffle: 15 × $10 gift cards per campus</div>
       </div>
     </div>
     <div class="card">
@@ -340,7 +417,7 @@
         <div style="font-size:12px;color:#666;margin-bottom:6px;">30 minutes · Weekdays 12:30–1:00 pm</div>
         <div style="font-size:12px;color:#666;margin-bottom:16px;line-height:1.5;">Sep 7 – Oct 9, 2026</div>
         <div style="background:#C17D11;color:#fff;border-radius:8px;padding:10px;font-size:12px;font-weight:600;margin-bottom:16px;">💵 $10 gift card sent within 3–7 business days</div>
-        <a href="https://forms.gle/5hygqmJhFu4gMqq16" target="_blank"
+        <a href="https://forms.gle/bRZP2xi4BLaGPjHP8" target="_blank"
            style="display:block;background:#7B4D0C;color:#fff;text-decoration:none;border-radius:8px;padding:12px;font-size:14px;font-weight:700;">
           Sign Up for On-Site Session →
         </a>
@@ -363,35 +440,14 @@
     </ul>
   </div>
 
-  <div class="qr-section">
-    <h2>Share this page</h2>
-    <p>Scan to open this page on your phone, or share the link with fellow students.</p>
-    <div class="qr-placeholder">
-      <svg width="90" height="90" viewBox="0 0 80 80" fill="none">
-        <rect x="5" y="5" width="30" height="30" rx="3" stroke="#ccc" stroke-width="3" fill="none"/>
-        <rect x="13" y="13" width="14" height="14" rx="1" fill="#ccc"/>
-        <rect x="45" y="5" width="30" height="30" rx="3" stroke="#ccc" stroke-width="3" fill="none"/>
-        <rect x="53" y="13" width="14" height="14" rx="1" fill="#ccc"/>
-        <rect x="5" y="45" width="30" height="30" rx="3" stroke="#ccc" stroke-width="3" fill="none"/>
-        <rect x="13" y="53" width="14" height="14" rx="1" fill="#ccc"/>
-        <rect x="45" y="45" width="8" height="8" rx="1" fill="#ccc"/>
-        <rect x="57" y="45" width="8" height="8" rx="1" fill="#ccc"/>
-        <rect x="45" y="57" width="8" height="8" rx="1" fill="#ccc"/>
-        <rect x="57" y="57" width="8" height="8" rx="1" fill="#ccc"/>
-      </svg>
-      <div class="qr-note">Replace with actual QR code</div>
-    </div>
-    <div style="color:#fff;font-size:14px;font-weight:600;">campusheat.wisc.edu</div>
-    <div class="qr-url">Generate at qr-code-generator.com</div>
-  </div>
-
   </div>
 
 </main>
 
 <footer>
-  Campus Thermal Comfort Design &nbsp;·&nbsp; University of Wisconsin–Madison, Department of Planning and Landscape Architecture &nbsp;·&nbsp; Texas A&M University<br>
-  PI: Wenwen Cheng, PhD &nbsp;·&nbsp; Researcher: Shu Sun (ssun352@wisc.edu)<br>
+  Campus Thermal Comfort Design &nbsp;·&nbsp; University of Wisconsin–Madison &nbsp;·&nbsp; Texas A&M University<br>
+  UW: PI: Wenwen Cheng, PhD &nbsp;·&nbsp; Researcher: Shu Sun (ssun352@wisc.edu)<br>
+  TAMU: PI: Chanam Lee &nbsp;·&nbsp; Researcher: Jiwoon Jeong (dolcejw324@tamu.edu)<br>
   IRB Protocol No. [XXXXX] &nbsp;·&nbsp; Participation is voluntary &nbsp;·&nbsp; © 2026
 </footer>
 
@@ -413,3 +469,4 @@ function selectSchool(school) {
 </script>
 </body>
 </html>
+
